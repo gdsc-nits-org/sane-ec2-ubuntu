@@ -6,7 +6,7 @@ echo "Updating Mirrors..."
 sudo apt-get -y update
 
 echo "Installing Packages..."
-sudo apt -y install fzf bat exa vim
+sudo apt -y install fzf bat exa vim unzip
 
 
 echo "Installing fnm..."
@@ -21,9 +21,8 @@ fnm use 20;
 echo "Installing pnpm and pm2..."
 npm install -g pnpm pm2
 
-# TODO
-wget -P "~/.bashrc" ""
-wget -P "~/.vimrc" ""
+curl "~/.bashrc" "https://raw.githubusercontent.com/gdsc-nits/ec2-ubuntu-basic/main/.bashrc" >> ~/.bashrc
+wget -P "~/.vimrc" "https://raw.githubusercontent.com/gdsc-nits/ec2-ubuntu-basic/main/.vimrc"
 
 source ~/.bashrc
 
