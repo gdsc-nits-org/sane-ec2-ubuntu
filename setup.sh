@@ -6,7 +6,7 @@ echo "Updating Mirrors..."
 sudo apt-get -y update
 
 echo "Installing Packages..."
-sudo apt -y install fzf bat exa vim unzip zoxide
+sudo apt -y install fzf bat eza vim unzip zoxide
 
 
 echo "Installing fnm..."
